@@ -1,10 +1,16 @@
 import "./App.scss";
-import { Select } from "./components/Select.tsx";
+import { GenericSelect } from "./components/GenericSelect.tsx";
+import { Book } from "./types/types.ts";
+import { booksData } from "./data/booksData.ts";
 
 function App() {
+  const onChange = (value: Book) => {
+    console.log(value);
+  };
+
   return (
     <>
-      <Select />
+      <GenericSelect<Book> values={booksData} onChange={onChange} />
     </>
   );
 }
