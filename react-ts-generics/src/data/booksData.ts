@@ -1,4 +1,4 @@
-import { Book } from "../types/types.ts";
+import { Book, Laptop, Movie } from "../types/types.ts";
 
 export const booksData: Book[] = [
   {
@@ -25,5 +25,31 @@ export const booksData: Book[] = [
     id: "5",
     title: "The Catcher in the Rye",
     author: "J.D. Salinger",
+  },
+];
+
+export const laptops: Laptop[] = [
+  {
+    id: "1",
+    model: "Orangebook Pro",
+    releaseDate: "2019",
+  },
+  {
+    id: "2",
+    model: "Orangebook Pro Extreme",
+    releaseDate: "2022",
+  },
+];
+
+export const movies: Movie[] = [
+  {
+    id: "1",
+    title: "Captain Marvel",
+    releaseDate: "2019",
+  },
+  {
+    id: "2",
+    title: "Good Omens",
+    releaseDate: "2019",
   },
 ];

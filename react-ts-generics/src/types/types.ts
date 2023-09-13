@@ -10,7 +10,10 @@ export type Movie = {
   releaseDate: string; // only movies have it
 };
 
-export interface BaseType {
+export type BaseType = { id: string } | string;
+
+export interface Laptop {
   id: string;
-  title: string;
+  model: string;
+  releaseDate: string;
 }
